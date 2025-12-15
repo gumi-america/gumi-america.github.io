@@ -2452,10 +2452,6 @@ input, select, textarea {
 	}
 
 /* Main */
-	#main2 {
-		padding-top: 1%;
-	}
-
 	#main {
 		margin-bottom: 0;
 	}
@@ -2465,7 +2461,7 @@ input, select, textarea {
 		}
 
 /* Footer */
-
+	
 	#footer {
 		position: relative;
 		overflow: hidden;
@@ -2473,6 +2469,7 @@ input, select, textarea {
 		background: #2b252c;
 		color: #fff;
 	}
+	
 
 		#footer .icon.circled {
 			background: #fff;
@@ -3171,3 +3168,7 @@ a.gform:focus {
   background-color: #ef8376;;
   transition: color 0.3s, background-color 0.3s;
 }
+
+footer#indep{
+		margin:0em;
+	}
