@@ -2452,6 +2452,9 @@ input, select, textarea {
 	}
 
 /* Main */
+	#main2 {
+		padding-top: 1%;
+	}
 
 	#main {
 		margin-bottom: 0;
