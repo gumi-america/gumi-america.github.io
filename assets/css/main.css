@@ -3184,3 +3184,10 @@ footer#indep{
 a.image.featured.news {
 	margin-bottom: 3%;
 }
+
+
+.icon-large {
+  /* Use font-size to scale icon fonts */
+  font-size: 3em; 
+}
+
