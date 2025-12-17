@@ -3308,3 +3308,48 @@ footer#indep{
     width: 100%;
     text-align: center;
 }
+
+#team .event-article {
+    text-align: center; /* Centers the H3 and P tag text under the photo */
+    margin-bottom: 4em;
+}
+
+#team .event-article p {
+    text-align: center; /* Overrides the 'justify' setting from the base CSS for bios */
+}
+
+/* Match the Team LinkedIn icon to the footer style */
+#team .team-social {
+    position: relative;
+    background: rgba(128, 128, 128, 0.05); /* Same as ul.icons in main.css */
+    border-radius: 4em;
+    display: inline-block;
+    padding: 0.15em 0.35em;
+    font-size: 1em;
+    cursor: default;
+    list-style: none;
+    margin: 0.5em 0 1em 0;
+}
+
+#team .team-social li {
+    display: inline-block;
+    padding-left: 0;
+}
+
+#team .team-social li a {
+    display: inline-block;
+    background: none;
+    width: 2em;   /* Slightly smaller for the header area */
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    border-radius: 100%;
+    border: 0;
+    color: inherit; /* Inherits the dark grey from the team header */
+    transition: color 0.35s ease-in-out;
+}
+
+#team .team-social li a:hover {
+    color: #ef8376; /* Matches your theme's hover color */
+    border-bottom-color: transparent;
+}
