@@ -2296,6 +2296,7 @@ input, select, textarea {
 		background: transparent;
 
 		transition: background 1s ease, padding 0.4s ease;
+		transition: all 0.5s ease-in-out;
 	}
 
 		#nav > ul {
@@ -3181,23 +3182,7 @@ footer#indep{
 }
 
 
-/* --- News & Events Custom Responsive Layout --- */
 
-/* 1. Desktop Layout (Three Columns) */
-#news-section .events-row {
-    /* Use flexbox for a standard three-column layout on wide screens */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Space them out evenly */
-    margin: 0;
-}
-
-#news-section .event-article {
-    /* Set each article to slightly less than 33.33% to account for gaps */
-    width: 32%; 
-    margin-bottom: 3em; /* Add some bottom margin for spacing */
-    box-sizing: border-box; /* Include padding and border in the element's total width/height */
-}
 
 /* 2. Mobile Layout (Stacked Columns - Applies up to 736px) */
 @media screen and (max-width: 736px) {
@@ -3287,4 +3272,39 @@ footer#indep{
 #nav.scrolled > ul:after {
     border-top-color: rgba(0, 0, 0, 0.1);
     border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* Ensure all portfolio images have the same height and crop nicely */
+.carousel article .image.featured img {
+    height: 200px;
+    object-fit: cover; /* This prevents stretching */
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.carousel article {
+    vertical-align: top; /* Keeps titles aligned if text lengths vary */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+/* Target ONLY the portraits within the #team section */
+#team .image.featured img {
+    max-width: 300px;    /* Maximum width on large screens */
+    max-height: 300px;   /* Maximum height on large screens */
+    width: 100%;         /* Allows it to be responsive on mobile */
+    height: auto;        /* Keeps the aspect ratio */
+    margin: 0 auto;      /* Centers the image within the column */
+    border-radius: 8px;  /* Optional: gives soft rounded corners */
+    object-fit: cover;   /* Ensures the image fills the 300x300 area perfectly */
+}
+
+/* Ensure the container doesn't force a stretch */
+#team .image.featured {
+    display: block;
+    width: 100%;
+    text-align: center;
 }
