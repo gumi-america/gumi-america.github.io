@@ -50,12 +50,14 @@
 								<span class="image">
 									<img src="images/pic-anto.jpg" alt="" />
 								</span>
-								<a href="https://www.anto.bio/" target="_blank">
-									<h2>Anto Biosciences</h2>
-									<div class="content">
-										<p>Making the gut microbiome computable to increase drug efficacy.</p>
-									</div>
-								</a>
+								<a href="javascript:void(0)" onclick="openModal('Anto Biosciences', 'images/logo-anto1.jpg', 'Making the gut microbiome computable to increase drug efficacy.', 'Pharma', 'https://www.anto.bio/')">
+            <div class="logo-container">
+                <img src="images/logo-anto1.jpg" alt="Anto Logo" class="tile-logo" />
+            </div>
+            <h2>Anto Biosciences</h2>
+            <div class="content">
+                <p>Pharma</p> </div>
+        </a>
 							</article>
 
 							<!--APOLINK-->
@@ -342,6 +344,39 @@
 					}
 				});
 			</script>
+			<script>
+				function openModal(title, logo, desc, label, url) {
+				document.getElementById('modalTitle').innerText = title;
+				document.getElementById('modalLogo').src = logo;
+				document.getElementById('modalDescription').innerText = desc;
+				document.getElementById('modalLabel').innerText = label;
+				document.getElementById('modalLink').href = url;
+				document.getElementById('portfolioModal').style.display = "block";
+			}
 
+			function closeModal() {
+				document.getElementById('portfolioModal').style.display = "none";
+			}
+
+			// Close modal if user clicks outside of the box
+			window.onclick = function(event) {
+				let modal = document.getElementById('portfolioModal');
+				if (event.target == modal) {
+					closeModal();
+				}
+			}
+			</script>
+			<div id="portfolioModal" class="modal">
+				<div class="modal-content">
+					<span class="close-button" onclick="closeModal()">&times;</span>
+					<div class="modal-body">
+						<img id="modalLogo" src="" alt="Company Logo" />
+						<h2 id="modalTitle"></h2>
+						<span id="modalLabel" class="domain-label"></span>
+						<p id="modalDescription"></p>
+						<a id="modalLink" href="" target="_blank" class="button">Visit Website</a>
+					</div>
+				</div>
+			</div>
 	</body>
 </html>
