@@ -3813,3 +3813,88 @@ footer#indep{
 .tiles article:hover .logo-box {
     transform: scale(1.1); /* Logo grows slightly on hover */
 }
+
+/* Update this section in your main.css */
+.hover-details p {
+    font-size: 0.8em;          /* Slightly smaller to help it fit */
+    line-height: 1.2;
+    color: #ffffff;
+    margin: 0;
+    
+    /* Strict single-line logic */
+    overflow: hidden;          /* Hides any text that overflows the tile width */
+    text-overflow: ellipsis;   /* Adds '...' at the end if the text is cut off */
+    
+    width: 100%;               /* Ensures the text respects the container width */
+    display: block;
+}
+
+/* Ensure the carousel reel is a flex container */
+.carousel .reel {
+    display: flex;
+    align-items: stretch; /* Forces all children to have the same height */
+    gap: 20px;            /* Consistent spacing between articles */
+    padding-bottom: 2em;
+}
+
+/* Update carousel article behavior */
+.carousel article {
+    display: flex;
+    flex-direction: column;
+    width: 18em;
+    margin: 0;           /* Gap handled by the reel container */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    overflow: hidden;
+}
+
+/* Ensure the text content pushes to fill space */
+.carousel article header {
+    flex-grow: 1;        /* Pushes the header/text to fill the height */
+    padding: 1.5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fix image height for carousel consistency */
+.carousel article .image.featured {
+    height: 160px;       /* Consistent height for logos/thumbnails */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9; /* Subtle contrast for the logo area */
+}
+
+.carousel article .image.featured img {
+    max-height: 80%;
+    width: auto;
+    object-fit: contain;
+}
+
+.section-bg-fixed {
+    position: relative;
+    /* Path to your image */
+    background-image: url("../../images/header2.jpg"); 
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; /* This keeps the image in place while scrolling */
+    
+    /* Define the height of this transition section */
+    height: 50vh; 
+    min-height: 20em;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    cursor: default;
+}
+
+/* Ensure the effect works on mobile by disabling fixed attachment */
+/* Mobile browsers often struggle with fixed backgrounds */
+@media screen and (max-width: 1280px) {
+    .section-bg-fixed {
+        background-attachment: scroll;
+    }
+}
