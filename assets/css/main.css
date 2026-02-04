@@ -3660,3 +3660,57 @@ footer#indep{
     animation: bounce 2s infinite;
 }
 
+/* Filter Buttons */
+.filter-container {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.filter-btn {
+    background: #f0f4f4;
+    border: 1px solid #df7366;
+    color: #df7366;
+    padding: 8px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: #df7366;
+    color: #fff;
+}
+
+/* Tile Hover Logic */
+.tiles article .hover-details {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.tiles article:hover .hover-details {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 15px;
+}
+
+.domain-tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Grid Filter Animation */
+.filter-item {
+    display: none; /* Hidden by default, shown by JS */
+}
+
+.show {
+    display: block;
+}

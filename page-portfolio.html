@@ -48,206 +48,215 @@
 							</header>
 						</article>
 						<br/>
+						<div class="filter-container">
+							<button class="filter-btn active" onclick="filterSelection('all')">All</button>
+							<button class="filter-btn" onclick="filterSelection('Pharma')">Pharma</button>
+							<button class="filter-btn" onclick="filterSelection('Space')">Space</button>
+							<button class="filter-btn" onclick="filterSelection('AI')">AI</button>
+							<button class="filter-btn" onclick="filterSelection('Health')">Health</button>
+							<button class="filter-btn" onclick="filterSelection('Robotics')">Robotics</button>
+							<button class="filter-btn" onclick="filterSelection('Enterprise')">Enterprise</button>
+							<button class="filter-btn" onclick="filterSelection('Hardware')">Hardware</button>
+							<button class="filter-btn" onclick="filterSelection('Auto')">Auto</button>
+						</div>
+
 						<section class="tiles">
-
-							<!--ANTO-->
-							<article class="style-dark">
-								<span class="image">
-									<img src="images/pic-anto.jpg" alt="" />
-								</span>
-								<a href="javascript:void(0)" onclick="openModal('Anto Biosciences', 'images/logo-anto1.jpg', 'Making the gut microbiome computable to increase drug efficacy.', 'Pharma', 'https://www.anto.bio/')">
-            <div class="logo-container">
-                <img src="images/logo-anto1.jpg" alt="Anto Logo" class="tile-logo" />
-            </div>
-            <h2>Anto Biosciences</h2>
-            <div class="content">
-                <p>Pharma</p> </div>
-        </a>
+							<article class="style-dark filter-item Pharma">
+								<span class="image"><img src="images/pic-anto.jpg" alt="" /></span>
+								<a href="https://www.anto.bio/" target="_blank">
+									<div class="tile-content">
+										<h2>Anto Biosciences</h2>
+										<div class="hover-details">
+											<span class="domain-tag">Pharma</span>
+											<p>Making the gut microbiome computable to increase drug efficacy.</p>
+										</div>
+									</div>
+								</a>
 							</article>
 
-							<!--APOLINK-->
-							<article class="style-dark">
-								<span class="image">
-									<img src="images/pic-apolink.jpg" alt="" />
-								</span>
+							<article class="style-dark filter-item Space">
+								<span class="image"><img src="images/pic-apolink.jpg" alt="" /></span>
 								<a href="https://apolink.space/" target="_blank">
-									<h2>Apolink</h2>
-									<div class="content">
-										<p>Building interoperable satellite relay network in low orbit.</p>
+									<div class="tile-content">
+										<h2>Apolink</h2>
+										<div class="hover-details">
+											<span class="domain-tag">Space</span>
+											<p>Building interoperable satellite relay network in low orbit.</p>
+										</div>
 									</div>
 								</a>
 							</article>
 
-							<!--DRAGONEYE-->
-							<article class="style-dark">
-								<span class="image">
-									<img src="images/pic-dragoneye.jpg" alt="" />
-								</span>
+							<article class="style-dark filter-item AI">
+								<span class="image"><img src="images/pic-dragoneye.jpg" alt="" /></span>
 								<a href="https://dragoneye.ai/" target="_blank">
-									<h2>Dragoneye</h2>
-									<div class="content">
-										<p>Building your custom video detection models in minutes.</p>
+									<div class="tile-content">
+										<h2>Dragoneye</h2>
+										<div class="hover-details">
+											<span class="domain-tag">AI</span>
+											<p>Building your custom video detection models in minutes.</p>
+										</div>
 									</div>
 								</a>
 							</article>
 
-							<!--EXPECTED PARROT-->
-							<article class="style-dark">
-								<span class="image">
-									<img src="images/pic-exparrot.jpg" alt="" />
-								</span>
+							<article class="style-dark filter-item AI">
+								<span class="image"><img src="images/pic-exparrot.jpg" alt="" /></span>
 								<a href="https://www.expectedparrot.com/" target="_blank">
-									<h2>Expected Parrot</h2>
-									<div class="content">
-										<p>Helping companies simulate their customers with AI agents.</p>
+									<div class="tile-content">
+										<h2>Expected Parrot</h2>
+										<div class="hover-details">
+											<span class="domain-tag">AI</span>
+											<p>Helping companies simulate their customers with AI agents.</p>
+										</div>
 									</div>
 								</a>
 							</article>
 
-							<!--FUTURE CLINIC-->
-							<article class="style-dark">
-								<span class="image">
-									<img src="images/pic-futureclinic.jpg" alt="" />
-								</span>
+							<article class="style-dark filter-item Health">
+								<span class="image"><img src="images/pic-futureclinic.jpg" alt="" /></span>
 								<a href="https://www.futureclinic.com/" target="_blank">
-									<h2>Future Clinic</h2>
-									<div class="content">
-										<p>Making it easy for any doctor to open their own digital clinic.</p>
+									<div class="tile-content">
+										<h2>Future Clinic</h2>
+										<div class="hover-details">
+											<span class="domain-tag">Health</span>
+											<p>Making it easy for any doctor to open their own digital clinic.</p>
+										</div>
 									</div>
 								</a>
 							</article>
 
-							<!--HABIT ROBOTICS-->
-							<article class="style-dark">
-								<span class="image">
-									<img src="images/pic-habit.jpg" alt="" />
-								</span>
+							<article class="style-dark filter-item Robotics">
+								<span class="image"><img src="images/pic-habit.jpg" alt="" /></span>
 								<a href="https://www.habitrobotics.com/" target="_blank">
-									<h2>HABIT Robotics</h2>
-									<div class="content">
-										<p>Building robots as a service for physical businesses.</p>
+									<div class="tile-content">
+										<h2>HABIT Robotics</h2>
+										<div class="hover-details">
+											<span class="domain-tag">Robotics</span>
+											<p>Building robots as a service for physical businesses.</p>
+										</div>
 									</div>
 								</a>
 							</article>
 
-							<!--PEARSON LABS-->
-							<article class="style-dark">
-								<span class="image">
-									<img src="images/pic-pearson.jpg" alt="" />
-								</span>
+							<article class="style-dark filter-item AI Enterprise">
+								<span class="image"><img src="images/pic-pearson.jpg" alt="" /></span>
 								<a href="https://www.pearsonlabs.ai/" target="_blank">
-									<h2>Pearson Labs</h2>
-									<div class="content">
-										<p>Building AI agents to automate corporate transactions.</p>
+									<div class="tile-content">
+										<h2>Pearson Labs</h2>
+										<div class="hover-details">
+											<span class="domain-tag">AI / Enterprise</span>
+											<p>Building AI agents to automate corporate transactions.</p>
+										</div>
 									</div>
 								</a>
 							</article>
 
-							<!--PEPPR AI-->
-							<article class="style-dark">
-								<span class="image">
-									<img src="images/pic-pepper.jpg" alt="" />
-								</span>
+							<article class="style-dark filter-item AI Enterprise">
+								<span class="image"><img src="images/pic-pepper.jpg" alt="" /></span>
 								<a href="https://www.usepeppr.ai/" target="_blank">
-									<h2>Peppr AI</h2>
-									<div class="content">
-										<p>Building self-improving knowledge base from company data.</p>
+									<div class="tile-content">
+										<h2>Peppr AI</h2>
+										<div class="hover-details">
+											<span class="domain-tag">AI / Enterprise</span>
+											<p>Building self-improving knowledge base from company data.</p>
+										</div>
 									</div>
 								</a>
 							</article>
 
-							<!--PIRAMIDAL-->
-							<article class="style-dark">
-								<span class="image">
-									<img src="images/pic-piramidal.jpg" alt="" />
-								</span>
+							<article class="style-dark filter-item AI Health">
+								<span class="image"><img src="images/pic-piramidal.jpg" alt="" /></span>
 								<a href="https://piramidal.ai/" target="_blank">
-									<h2>Piramidal</h2>
-									<div class="content">
-										<p>Building the foundation model for the human brain.</p>
+									<div class="tile-content">
+										<h2>Piramidal</h2>
+										<div class="hover-details">
+											<span class="domain-tag">AI / Health</span>
+											<p>Building the foundation model for the human brain.</p>
+										</div>
 									</div>
 								</a>
 							</article>
 
-							<!--POWERMATRIX-->
-							<article class="style-dark">
-								<span class="image">
-									<img src="images/pic-powermatrix.jpg" alt="" />
-								</span>
+							<article class="style-dark filter-item Hardware">
+								<span class="image"><img src="images/pic-powermatrix.jpg" alt="" /></span>
 								<a href="https://www.pwrmatrix.com/" target="_blank">
-									<h2>Power Matrix</h2>
-									<div class="content">
-										<p>Building next-generation high-performance power supplies.</p>
+									<div class="tile-content">
+										<h2>Power Matrix</h2>
+										<div class="hover-details">
+											<span class="domain-tag">Hardware</span>
+											<p>Building next-generation high-performance power supplies.</p>
+										</div>
 									</div>
 								</a>
 							</article>
 
-							<!--PROKOPARK-->
-							<article class="style-dark">
-								<span class="image">
-									<img src="images/pic-prokopark.jpg" alt="" />
-								</span>
+							<article class="style-dark filter-item AI">
+								<span class="image"><img src="images/pic-prokopark.jpg" alt="" /></span>
 								<a href="https://www.prokopark.us/" target="_blank">
-									<h2>Prokopark</h2>
-									<div class="content">
-										<p>Building an AI parking solution for parking managers.</p>
+									<div class="tile-content">
+										<h2>Prokopark</h2>
+										<div class="hover-details">
+											<span class="domain-tag">AI</span>
+											<p>Building an AI parking solution for parking managers.</p>
+										</div>
 									</div>
 								</a>
 							</article>
 
-							<!--REACTWISE-->
-							<article class="style-dark">
-								<span class="image">
-									<img src="images/pic-reactwise.jpg" alt="" />
-								</span>
+							<article class="style-dark filter-item AI Enterprise">
+								<span class="image"><img src="images/pic-reactwise.jpg" alt="" /></span>
 								<a href="https://www.reactwise.com/" target="_blank">
-									<h2>Reactwise</h2>
-									<div class="content">
-										<p>Building an AI Co-Pilot for Chemical Process Optimization.</p>
+									<div class="tile-content">
+										<h2>Reactwise</h2>
+										<div class="hover-details">
+											<span class="domain-tag">AI / Enterprise</span>
+											<p>Building an AI Co-Pilot for Chemical Process Optimization.</p>
+										</div>
 									</div>
 								</a>
 							</article>
 
-							<!--RIMBA-->
-							<article class="style-dark">
-								<span class="image">
-									<img src="images/pic-rimba.jpg" alt="" />
-								</span>
+							<article class="style-dark filter-item AI Enterprise">
+								<span class="image"><img src="images/pic-rimba.jpg" alt="" /></span>
 								<a href="https://www.rimba.ai/" target="_blank">
-									<h2>Rimba</h2>
-									<div class="content">
-										<p>Helps companies do environmental compliance reporting with AI.</p>
+									<div class="tile-content">
+										<h2>Rimba</h2>
+										<div class="hover-details">
+											<span class="domain-tag">AI / Enterprise</span>
+											<p>Helps companies do environmental compliance reporting with AI.</p>
+										</div>
 									</div>
 								</a>
 							</article>
 
-							<!--SERAFIS-->
-							<article class="style-dark">
-								<span class="image">
-									<img src="images/pic-serafis.jpg" alt="" />
-								</span>
+							<article class="style-dark filter-item AI">
+								<span class="image"><img src="images/pic-serafis.jpg" alt="" /></span>
 								<a href="https://serafis.ai/" target="_blank">
-									<h2>Serafis</h2>
-									<div class="content">
-										<p>A search and discovery engine for long-form content (podcasts!).</p>
+									<div class="tile-content">
+										<h2>Serafis</h2>
+										<div class="hover-details">
+											<span class="domain-tag">AI</span>
+											<p>A search and discovery engine for long-form content.</p>
+										</div>
 									</div>
 								</a>
 							</article>
 
-							<!--TOMA-->
-							<article class="style-dark">
-								<span class="image">
-									<img src="images/pic-toma.jpg" alt="" />
-								</span>
+							<article class="style-dark filter-item AI Auto">
+								<span class="image"><img src="images/pic-toma.jpg" alt="" /></span>
 								<a href="https://www.toma.com/" target="_blank">
-									<h2>Toma</h2>
-									<div class="content">
-										<p>Toma provides fully integrated AI software suite to automotive dealers.</p>
+									<div class="tile-content">
+										<h2>Toma</h2>
+										<div class="hover-details">
+											<span class="domain-tag">AI / Auto</span>
+											<p>Toma provides fully integrated AI software suite to automotive dealers.</p>
+										</div>
 									</div>
 								</a>
 							</article>
-					
-					</section>
+						</section>
+						
 					</div>
 					<br/>
 				</div>
@@ -383,5 +392,49 @@
 					</div>
 				</div>
 			</div>
+			<script>
+				function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filter-item");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+    
+    // Update active button state
+    var btns = document.getElementsByClassName("filter-btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].classList.remove("active");
+    }
+    event.currentTarget.classList.add("active");
+}
+
+function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+}
+
+function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+    }
+    element.className = arr1.join(" ");
+}
+
+// Initialize show all
+filterSelection("all");
+		</script>
+
+			
 	</body>
 </html>
